@@ -9,7 +9,7 @@ export const app = express()
 app.use(express.json())
 
 app.get('/', (req, res) => {
-    res.status(200).json({hello: 'world'})
+    res.status(200).json({hello: 'world!?'})
 })
 
 app.use(SETTINGS.PATH.VIDEOS, videosRouter)
